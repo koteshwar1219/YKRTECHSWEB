@@ -5,9 +5,11 @@
 YKR Tech(Learn EveryDay)  
 </Title>  
 <link rel="stylesheet" href="HomePage.css"> 
+<link rel="stylesheet" href="HomePagePopUp.css"> 
 </Head>   
         
     <Body> 
+        <script type="text/JavaScript" src="./HomePage.js"></script>
         <header>
             <div class="wrapper">
                 <div class="logo">
@@ -16,7 +18,7 @@ YKR Tech(Learn EveryDay)
         <ul class="nav-area">
         
         <li>
-        <a href="#" onclick="window.location.replace('MainPage.html');"> Home </a>
+        <a href="#" onclick="window.location.replace('HomePage.html');"> Home </a>
         </li>
         <li>
         <a href="#" onclick="window.location.replace('Joinus.html');"> Join Us </a>
@@ -38,8 +40,15 @@ YKR Tech(Learn EveryDay)
             YKR Tech 
             <br>
             (Learn EveryDay)</h1>
-<a href="#">Get Started</a>
+            <button class="button" href="#" onclick="show('popup')">Get Started</button>
     </div>
+    <!-- This is what will be included inside the popup -->
+<div class="popup" id="popup">
+    <p>This is a popup!</p>
+    <p>Overlay uses <b>:before</b> and <b>:after</b> pseudo-classes.</p>
+    <p>Website will still remain visible behind this popup.</p>
+    <a href="#" onclick="hide('popup')">Close</a>
+  </div>
         </header>
         
         </Body> 
